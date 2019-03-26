@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RekenPlein</title>
+<link rel="stylesheet" type="text/css" href="toetsen.css">
+<h2 class="homeknop"><a href="rekenhome.html">Home</a></h2>
+<h2 class="toetsknop"><a href="oefenen.html">Oefenen</a></h2>
+</head>
+<body>
+<img src="patrickstar.png" class="firstimg" height="240" />
+<img src="Pikachu.png" class="thirdimg" height="240" />
+<body background="cartoon.jpg">
+<div class="color-box"></div>
+
+<h1>Toetsen</h1>
+<h2>Kies een tafel:</h2>
+
+<ul>
+	<li><button type="button" name="button" id="tafel1" onclick="toetsen(1)">Tafel van 1</button></li>
+	<li><button type="button" name="button" id="tafel2" onclick="toetsen(2)">Tafel van 2</button></li>
+	<li><button type="button" name="button" id="tafel3" onclick="toetsen(3)">Tafel van 3</button></li>
+	<li><button type="button" name="button" id="tafel4" onclick="toetsen(4)">Tafel van 4</button></li>
+	<li><button type="button" name="button" id="tafel5" onclick="toetsen(5)">Tafel van 5</button></li>
+	<li><button type="button" name="button" id="tafel6" onclick="toetsen(6)">Tafel van 6</button></li>
+	<li><button type="button" name="button" id="tafel7" onclick="toetsen(7)">Tafel van 7</button></li>
+	<li><button type="button" name="button" id="tafel8" onclick="toetsen(8)">Tafel van 8</button></li>
+	<li><button type="button" name="button" id="tafel9" onclick="toetsen(9)">Tafel van 9</button></li>
+	<li><button type="button" name="button" id="tafel10" onclick="toetsen(10)">Tafel van 10</button></li>
+	<li id="cijfer">Cijfer: </li>
+<li id="Download"></li>
+</ul>
+
+
+   <div id="tafels">
+	<div id="vakje"></div>
+<script>
+	function toetsen(x) {
+		let number = x;
+		let i = 1;
+
+		document.getElementById("vakje").innerHTML = "<form>"
+		document.getElementById("vakje").innerHTML += "&nbsp;&nbsp;" + i + " x " + number + " = <input type='number' id='som" + i + "'></input><br />";
+		for (i=2; i < 10; i++) {
+			document.getElementById("vakje").innerHTML += "&nbsp;&nbsp;" + i + " x " + number + " = <input type='number' id='som" + i + "'></input><br />";
+		}
+		document.getElementById("vakje").innerHTML += i + " x " + number + " = <input type='number' id='som" + i + "'></input><br />";
+		document.getElementById("vakje").innerHTML += "<input type='submit' onclick='controleer(" + number + ")' value='Controleer' class='btn'></form>";
+
+    }
+
+    function controleer(z){
+    	let number = z;
+    	var p = 0;
+    	for (i = 1; i < 11; i++){
+    		if(document.getElementById("som" + i).value == (i * number)){
+    			document.getElementById("som" + i).style = "background-color: lightgreen;";
+    			p++ ;
+    		}
+
+    		else{
+    			document.getElementById("som" + i).style = "background-color: tomato; color: white;";
+    		}
+
+    	}
+        document.getElementById("cijfer").innerHTML = p;
+        document.getElementById("Download").innerHTML = '<a href="tafel oefening.pdf" >Download</a>';
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>

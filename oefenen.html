@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RekenPlein</title>
+<link rel="stylesheet" type="text/css" href="oefenen.css">
+<h2 class="homeknop"><a href="rekenhome.html">Home</a></h2>
+<h2 class="toetsknop"><a href="toetsen.html">Toetsen</a></h2>
+</head>
+<body>
+<img src="Jimmy_Neutron.png" class="firstimg" height="240" />
+<img src="CrimsonChin.png" class="secondimg" height="240" />
+<body background="cartoon.jpg">
+<div class="color-box"></div>
+
+<h1>Oefenen</h1>
+<h2>Kies een tafel:</h2>
+<ul>
+	<li><button type="button" name="button" id="tafel1" >Tafel van 1</button></li>
+	<li><button type="button" name="button" id="tafel2">Tafel van 2</button></li>
+	<li><button type="button" name="button" id="tafel3">Tafel van 3</button></li>
+	<li><button type="button" name="button" id="tafel4">Tafel van 4</button></li>
+	<li><button type="button" name="button" id="tafel5">Tafel van 5</button></li>
+	<li><button type="button" name="button" id="tafel6">Tafel van 6</button></li>
+	<li><button type="button" name="button" id="tafel7">Tafel van 7</button></li>
+	<li><button type="button" name="button" id="tafel8">Tafel van 8</button></li>
+	<li><button type="button" name="button" id="tafel9">Tafel van 9</button></li>
+	<li><button type="button" name="button" id="tafel10">Tafel van 10</button></li>
+</ul>
+<div>
+	<div id="tafels">
+</div>
+<script>
+document.getElementById('tafel1').onclick = function() {tafels(1)}
+  document.getElementById('tafel2').onclick = function() {tafels(2)}
+  document.getElementById('tafel3').onclick = function() {tafels(3)}
+  document.getElementById('tafel4').onclick = function() {tafels(4)}
+  document.getElementById('tafel5').onclick = function() {tafels(5)}
+  document.getElementById('tafel6').onclick = function() {tafels(6)}
+  document.getElementById('tafel7').onclick = function() {tafels(7)}
+  document.getElementById('tafel8').onclick = function() {tafels(8)}
+  document.getElementById('tafel9').onclick = function() {tafels(9)}
+  document.getElementById('tafel10').onclick = function() {tafels(10)}
+
+  function tafels(x) {
+    let number = x;
+    let i = 0;
+    let a = document.getElementById('tafels').innerHTML = i + " x " + number + " = " + i * number + "<br>"
+    for (i = 1; i < 11; i++ ){
+    let a = document.getElementById('tafels').innerHTML += i + " x " + number + " = " + i * number + "<br>"}
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.color-box {
+	background-color: white;
+	width: 500px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	margin-top: -390px;
+	border-style: solid;
+	border-width: thick;
+	border-color: maroon;
+	background-color: orange;
+}
+
+h1 {
+	text-align: center;
+	margin-top: -570px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color: darkolivegreen;
+}
+
+h2 {
+	text-align: center;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color: darkolivegreen;
+}
+
+ul {
+	margin-left: 550px;
+	list-style-type: none;
+	margin-top: 60px;
+	font-size: 25px;
+}
+
+#tafels {
+	margin: 0;
+	margin-left: 800px;
+	margin-top: -325px;
+	font-size: 20px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color: maroon;
+}
+
+button {
+	border-style: solid;
+	color: darkseagreen;
+	background-color: maroon;
+	border-color: green;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.homeknop {
+	text-align: left;
+    border-style: ridge;
+    border-color: maroon;
+    width: 64px;
+    border-width: 3px;
+    margin-left: 30px;
+    background-color: maroon;
+}
+
+.toetsknop {
+	text-align: left;
+	border-style: ridge;
+	border-color: maroon;
+	border-width: 3px;
+	width: 95px;
+	margin-left: 30px;
+	background-color: maroon;
+}
+
+.toetsknop a, .homeknop a {
+	text-decoration: none;
+	color: orange;
+}
+
+#vakje {
+	margin: 0;
+	margin-left: -70px;
+	margin-bottom: 170px;
+}
+
+#cijfer {
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.firstimg{
+margin-top:100px;	
+margin-left:150px;
+}
+.thirdimg{
+margin-left:800px;	
+}
+
+	
+
+}

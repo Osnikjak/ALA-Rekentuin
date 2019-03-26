@@ -1,0 +1,102 @@
+
+body {
+
+	margin-top:130px;
+	margin-left:440px;
+	height:500px;
+	width:600px;	
+}
+
+.color-box{
+	background-color: orange;
+	width:500px;
+	height:500px;
+	border: solid brown 10px;
+	margin-left: 35px;
+}
+
+
+
+
+nav ul {
+	list-style-type: none;
+	margin-top:120px;
+	height:150px;
+	    display: flex;
+		position:center;
+}
+
+li { 
+font-family: Comic Sans MS, Comic Sans, cursive;
+font-size: 25px;
+width:100px;
+border: solid 2px;
+background-color: darkseagreen;
+height:50px;
+text-align: center;
+margin-left: 60px;
+
+
+
+
+
+}
+
+.move-left{
+text-align:center;
+margin-left:180px;}
+
+h1 {
+margin-top:-80px;	
+margin-left: 140px;
+font-size:60px;
+font-family: Comic Sans MS, Comic Sans, cursive;
+color: maroon;
+}	
+
+
+	
+
+p {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-left:130px;
+  margin-top:-380px;
+  color: forestgreen;
+  font-size: 25px;
+  font-weight: bold;
+ 
+
+}
+ img{
+	 margin-left:750px;
+	 margin-top:150px;
+ }
+ .firstimg{
+	 margin-top: -280px;
+ }
+ .secondimg{
+
+ position:absolute;
+ top: 20px;
+ right:1250px;
+ margin-top:200px;
+ }
+ footer{
+ margin-top:850px;
+ margin-left:-70px;
+
+
+ }
+
+
+  h2{
+margin-top:-720px;
+margin-left:120px; 
+font-family: Comic Sans MS, Comic Sans, cursive;
+color: forestgreen;
+
+ }
+ h3{
+margin-top:-350px;	 
+ }
+
